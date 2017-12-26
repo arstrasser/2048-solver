@@ -15,6 +15,6 @@ with open(filename) as f:
     maxEvolution = x['max'];
     avgEvolution = x['average'];
 
-plt.plot(avgEvolution);
-plt.plot(maxEvolution);
+plt.plot(avgEvolution[0:10000]);
+plt.plot(maxEvolution[0:10000]);
 plt.show();
