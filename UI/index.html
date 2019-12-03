@@ -1,0 +1,67 @@
+<!-- Alex Strasser 4/7/2018 -->
+<div>
+  <div class="container" style="display:inline-block; margin-left: calc(35% - 250px)">
+    <h3 class="title" style="margin:10px 0">Neural Networks playing:</h3>
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="score-container">0</div>
+      <div id="max-score" class="score-container">0</div>
+    </div>
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+    <p class="game-intro">Neural network #<span id="curNet">1</span> of <span id="numNets">500</span></p>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <hr>
+    <p>Project Created by Alex Strasser '19</p>
+    <p>
+      <b>Other Credits:</b><br>
+      UI -- Created by Gabriele Cirulli, based on 1024 by Veewo Studio, and conceptually similar to Threes by Asher Vollmer.
+    </p>
+  </div>
+  <div class="container" style="display:inline-block; width:25%; float:right; margin-right:5%">
+    <h2 class="title" style="margin-bottom: 0px">2048 with Genetic Algorithms</h2>
+    <h4 class="title" style="margin-left: 15px; margin-top: 5px"> by Alex Strasser '19</h4>
+    <p>&nbsp;&nbsp;&nbsp;This is a demonstration of an AI agent that was trained using Genetic Algorithms to play the simple game of 2048. It was trained in python over the course of a couple weeks and played millions of games in order to learn strategies.</p>
+    <p>&nbsp;&nbsp;&nbsp;The way genetic algorithms work is similar to populations of a species. A "generation" of neural network is randomized, and then they play a bunch of games. The best are selected and combined to create a new generation. This is repeated thousands of times until you are left with better generations that have learned how to play the game.</p>
+    <br>
+    <p>For more information, read the paper!</p>
+  </div>
+</div>
+<link rel="stylesheet" href="styles.css" />
+<script src="hammer.min.js"></script>
+<script src="scripts.js"></script>
