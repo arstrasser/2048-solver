@@ -1,6 +1,6 @@
 var highest = localStorage.getItem("high") | 0;
 
-var speed = 1000;
+var speed = 200;
 
 document.getElementById("max-score").innerHTML = highest;
 
